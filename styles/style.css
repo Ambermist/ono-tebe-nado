@@ -1,14 +1,13 @@
 /* место для вашего кода */
 
 .header {
-  height: 293px;
   font-size: 18px;
   font-weight: 400;
 }
 
 .header__wrapper {
   display: grid;
-  padding: 92px 50px 90px;
+  padding: 92px 50px 92px;
   grid-template-columns: 3fr 1fr 3fr;
   column-gap: 25px;
   align-items: center;
@@ -55,9 +54,9 @@
 }
 
 .cover {
-  height: 757px;
+  min-height: 757px;
   position: relative;
-  z-index: -2;
+  z-index: 1;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,7 +67,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  z-index: -1;
+  z-index: 2;
   background-color: rgba(0 0 0 / 60%);
 }
 
@@ -77,11 +76,13 @@
 }
 
 .cover__title {
+  position: relative;
   color: rgba(255 255 255 / 1);
   font-weight: 700;
   text-transform: uppercase;
   line-height: 120%;
   font-size: 100px;
+  z-index: 3;
 }
 
 .aligned-text,
@@ -124,6 +125,7 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
   letter-spacing: 0.05px;
+  z-index: 3;
 }
 
 .bet-button {
@@ -132,15 +134,13 @@
   background-color: transparent;
   text-align: center;
   line-height: 117%;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12px;
   color: rgba(255, 255, 255, 1);
-}
-
-.lots {
-  height: 1017px;
+  z-index: 3;
 }
 
 .lots__heading {
@@ -178,7 +178,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -2;
+  z-index: 1;
 }
 
 .card_type_film {
@@ -202,17 +202,14 @@
 }
 
 .card__title {
+  text-decoration: underline;
+  text-underline-offset: 3px;
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 700;
   line-height: 120%;
   color: rgba(255, 255, 255, 1);
-}
-
-.card__title span {
-  display: inline-block;
-  line-height: 100%;
-  border-bottom: 1px solid;
+  z-index: 3;
 }
 
 .card__text {
@@ -220,22 +217,17 @@
   font-weight: 400;
   line-height: 120%;
   color: rgba(255, 255, 255, 1);
+  z-index: 3;
 }
 
 .lots__look-more-link {
   display: inline-block;
   padding: 30px 0 146px 65px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
   font-size: 20px;
   font-weight: 400;
   line-height: 117%;
-}
-
-.lots__look-more-link span {
-  border-bottom: 1px solid;
-}
-
-.about {
-  height: 595px;
 }
 
 .about__wrapper {
@@ -299,7 +291,6 @@
 }
 
 .footer {
-  height: 366px;
   font-size: 18px;
   font-weight: 400;
 }
